@@ -172,7 +172,7 @@ html, body {
     border-radius: 8px;
 }
 
-#messange{
+#messanges{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -180,28 +180,27 @@ html, body {
     gap: 10px;
     font-family: 'Montserrat';
     overflow-y: scroll;
+    scroll-behavior: smooth;
     padding-right: 15px;
 }
 
-
-
-#messange::-webkit-scrollbar-track {
+#messanges::-webkit-scrollbar-track {
     border-radius: 10px;
 }
    
-#messange::-webkit-scrollbar {
+#messanges::-webkit-scrollbar {
     width: 7px;
     background: #000000;
     border-radius: 10px;
 }
 
-#messange::-webkit-scrollbar-thumb {
+#messanges::-webkit-scrollbar-thumb {
     background: rgba(212, 0, 255,0.8); 
     border-radius: 10px;
 }
 
-#messange > div{
-    background-color: #000000;
+#messanges > div{
+    background-color: #4C29A1;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -211,17 +210,77 @@ html, body {
     font-family: "Montserrat";
 }
 
-#messange .bot{
-    background-color: #eeeeee;
-}
-
-#messange > div > span:first-child{
-    background-color: #000000;
-    font-size: 11px;
+#messanges > div > span:first-child{
+    font-size: 12px;
     font-weight: 500;
 }
-#messange > div > span:last-child{
-    background-color: #000000;
+#messanges > div > span:last-child{
+
     font-size: 15px;
     font-weight: 500;
+}
+
+
+
+
+
+#send-messange, #send-messange > form {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#messange-input{
+    background-color: hsl(243, 56%, 30%);
+    padding: 5px;
+    width: 440px;
+    border: none;
+    border-radius: 5px;
+    color: #eeeeee;
+    border: 1px solid rgba(255, 255, 255,0);
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#messange-input:focus{
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+#messange-input::placeholder{
+    color: hsl(0, 0%, 50%);
+}
+
+#button-send-message{
+    background-color: hsl(278, 80%, 40%);
+    padding: 5px 60px;
+    width: 90px;
+    border-radius: 5px;
+    color: #eeeeee;
+    border: 1px solid rgba(255, 255, 255,0);
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: top;
+    justify-content: center;
+    gap: 5px;
+}
+
+#button-send-message > svg > path, #button-send-message > svg{
+    fill: #eeeeee;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+#button-send-message:hover{
+    border: 1px solid #eeeeee;
+    cursor: pointer;
 }
