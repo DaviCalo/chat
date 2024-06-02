@@ -33,13 +33,23 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: top;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #top-area > div{
   width: 30%;
-  background: hsl(0, 67%, 46%);;
+  /* background: hsl(0, 67%, 46%); */
 }
+
+#start-top-area{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#start-top-area > img{ 
+    transform: scale(0.7);
+}
+
 
 
 
@@ -200,7 +210,7 @@ html, body {
 }
 
 #messanges > div{
-    background-color: #4C29A1;
+    background-color: hsl(258, 70%, 45%);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -215,14 +225,19 @@ html, body {
     font-weight: 500;
 }
 #messanges > div > span:last-child{
-
     font-size: 15px;
     font-weight: 500;
 }
 
+.bot > span:first-child{
+    font-size: 17px;
+    font-weight: 600;
+}
 
-
-
+.bot > span:last-child{
+    font-size: 17px;
+    font-weight: 500;
+}
 
 #send-messange, #send-messange > form {
     width: 100%;

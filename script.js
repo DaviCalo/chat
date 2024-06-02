@@ -2,7 +2,9 @@ const chat = document.getElementById('messanges');
 const form = document.getElementById('form-message');
 const input = document.getElementById('messange-input');
 
-
+window.onload = function() {
+    chat.scrollTop = chat.scrollHeight;
+};
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -22,7 +24,7 @@ const createMessage = () => {
 
     Name.textContent = "Davi Calô";
     Content.textContent = input.value;
-    
+
     Message.appendChild(Name);
     Message.appendChild(Content);
     console.log(Message);
